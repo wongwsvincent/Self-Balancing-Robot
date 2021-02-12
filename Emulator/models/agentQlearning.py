@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-class AgentSarsa(object):
+class AgentQlearning(object):
     def __init__(self, env, alpha=0.1, gamma=0.9, epsilon=0.8):
         self.env = env
         self.alpha = alpha
