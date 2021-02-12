@@ -36,7 +36,7 @@ class AgentSarsa(object):
             
     def get_action(self, state):
         self.check_if_state_exist(state)
-        if self.training==True and np.random.rand() < math.exp(-self.visits[state]/self.epsilon_lifetime)*self.epsilon:
+        if self.training==True and np.random.rand() < 0.5*(math.exp(-self.visits[state]/self.epsilon_lifetime)+1)*self.epsilon:
             target_action = self.actions.sample()
         else:
             target_actions = self.q_table[state]
