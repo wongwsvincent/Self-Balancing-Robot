@@ -13,3 +13,8 @@ The plan is to train a model in an emulator with simulated data, and transfer th
  - *Emulator*: contains the code to train agent in simulated environment
    - *Models*: contains a collection of agent models as listed above
 <!--  - *RealEnv*: contains the code to run agent in real-life environment  -->
+
+## To do:
+ - modify emulator environment to become more realistic
+ - re-train with the new environment
+ - deploy trained model in real robot
